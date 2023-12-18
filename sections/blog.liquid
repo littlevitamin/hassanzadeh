@@ -174,7 +174,7 @@
           <div class="article__text-wrapper">
             <h2 class="article__title">
               <a href="{{ article.url }}" title="{{ article.title | strip_html | escape }}">
-                {{ article.title }}
+                {{ article.title |  truncatewords: 5 }}
               </a>
             </h2>
 

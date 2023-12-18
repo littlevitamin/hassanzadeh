@@ -24,37 +24,42 @@
 {% endif %}
 
 
-
 <script>
 class LoadMore extends HTMLElement {
  constructor() {
   super();
   this.addEventListener("click", this.loadMoreItems);
  }
-loadMoreItems() { 
- const loadMoreBtn = this.querySelector('[type="button"]');
- loadMoreBtn.setAttribute("disabled", true);
- let { currentPage, pageSize, nextUrl, totalItems } = this.dataset
- let nextPage = parseInt(this.dataset.currentPage) + 1
-fetch(nextUrl.replace(/page=[0-9]+/, 'page=' + nextPage))
- .then(response => response.text())
- .then((responseText) => {
-  const html = responseText;
-  $('#CollectionLoop')
-   .append($(html)
-   .find('#CollectionLoop')
-   .html());
-  })
- .catch((e) => {
-     console.error(e);
-  })
- .finally(() => {
-  loadMoreBtn.removeAttribute("disabled");
-  this.dataset.currentPage = parseInt(this.dataset.currentPage) + 1;
-  let isLastPage = parseInt(totalItems) - (nextPage * parseInt(pageSize)) < 0
-  this.querySelector('[load-items-count]').innerHTML = isLastPage ? parseInt(totalItems) : nextPage * parseInt(pageSize)
-  isLastPage && loadMoreBtn.setAttribute("disabled", true);
- });
+ loadMoreItems() { 
+  const loadMoreBtn = this.querySelector('[type="button"]');
+  loadMoreBtn.setAttribute("disabled", true);
+
+  let { currentPage, pageSize, nextUrl, totalItems } = this.dataset;
+  let nextPage = parseInt(this.dataset.currentPage) + 1;
+
+  fetch(nextUrl.replace(/page=[0-9]+/, 'page=' + nextPage))
+   .then(response => response.text())
+   .then((responseText) => {
+    const html = responseText;
+    $('#CollectionLoop')
+     .append($(html)
+     .find('#CollectionLoop')
+     .html());
+   })
+   .catch((e) => {
+       console.error(e);
+    })
+   .finally(() => {
+    loadMoreBtn.removeAttribute("disabled");
+    this.dataset.currentPage = parseInt(this.dataset.currentPage) + 1;
+    let isLastPage = parseInt(totalItems) - (nextPage * parseInt(pageSize)) < 0;
+    let itemCountSpan = this.querySelector('.gog');
+
+    itemCountSpan.innerHTML = isLastPage ? parseInt(totalItems) : nextPage * parseInt(pageSize);
+    isLastPage && loadMoreBtn.setAttribute("disabled", true);
+
+    itemCountSpan.style.display = loadMoreBtn.hasAttribute("disabled", true) ? 'none' : 'inline';
+   });
  }
 }
 customElements.define('load-more', LoadMore);

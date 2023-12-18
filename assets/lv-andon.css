@@ -3336,9 +3336,25 @@ a.navlink.navlink--grandchild.all .navtext {
   
   
 }
-      
-      
-      
-      
-      
-      
+
+.template-index .quick-add-button,
+.search-page .popout--sort .popout--active .popout__toggle__text:nth-child(2) {
+  display: none!important;
+}
+
+.search-page .popout--sort .popout--active .popout__toggle__text:first-child {
+  display: inline-block!important;
+}
+
+@media screen and (max-width: 479px) {
+  .popout--drawer,.popout--drawer .popout {
+    width: 110%!important;
+  }
+}
+
+/* Wishlist pop up styling */
+
+.swym-ui-component .swym-user-login-status,
+.swym-icon::before {
+  color: #F8F8F8!important;
+}
