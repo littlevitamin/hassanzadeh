@@ -1,0 +1,143 @@
+{
+  "sections": {
+    "hero": {
+      "type": "collection-image-with-title",
+      "settings": {
+        "show_title": true,
+        "show_description": false,
+        "text_color": "text-light",
+        "flex_align": "align--middle-left",
+        "transparent": true,
+        "show_image": true,
+        "banner_layout": "overlay",
+        "height": "four-fifty-height-hero",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000"
+      }
+    },
+    "main": {
+      "type": "collection",
+      "blocks": {
+        "00e1b231-802f-405c-bc4e-dd4165be5d54": {
+          "type": "group",
+          "disabled": true,
+          "settings": {
+            "title": "Metal",
+            "group_tags": "Rose Gold, Platinum"
+          }
+        },
+        "6612194a-ae43-4667-8ac4-378f6aed19a3": {
+          "type": "featured_image",
+          "disabled": true,
+          "settings": {
+            "featured_image_bg_position": "center-center",
+            "featured_heading": "Featured link",
+            "featured_text": "<p>Promote products or collections<\/p><p><\/p>",
+            "featured_button_text": "",
+            "featured_button_link": "",
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10
+          }
+        },
+        "3f0c1e8e-78d7-4234-918a-aa439790cb3a": {
+          "type": "group",
+          "disabled": true,
+          "settings": {
+            "title": "Stones",
+            "group_tags": "Diamond, Ruby, Emerald"
+          }
+        },
+        "a77c87c7-e8d0-4d09-8675-eaa9555d81f8": {
+          "type": "group",
+          "disabled": true,
+          "settings": {
+            "title": "Styles",
+            "group_tags": "Initial Rings, Solitare, Eternity"
+          }
+        }
+      },
+      "block_order": [
+        "00e1b231-802f-405c-bc4e-dd4165be5d54",
+        "6612194a-ae43-4667-8ac4-378f6aed19a3",
+        "3f0c1e8e-78d7-4234-918a-aa439790cb3a",
+        "a77c87c7-e8d0-4d09-8675-eaa9555d81f8"
+      ],
+      "settings": {
+        "enable_sort": true,
+        "enable_filters": true,
+        "filter_layout": "inline-open",
+        "grid": 4,
+        "grid_mobile": "2",
+        "product_limit": 50
+      }
+    },
+    "subcollections": {
+      "type": "subcollections",
+      "disabled": true,
+      "settings": {
+        "subcollection_layout": "carousel",
+        "subcollection_description": true,
+        "select_image": "product"
+      }
+    },
+    "16445270712bdabb3b": {
+      "type": "section-slideshow",
+      "blocks": {
+        "1644527071db33e58b-0": {
+          "type": "image",
+          "settings": {
+            "bg_position": "center-center",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "Image slide",
+            "description": "Tell your brand's story through images.",
+            "flex_align": "align--middle-center",
+            "text_color": "text-light",
+            "transparent": true,
+            "link_text": "View products",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "hero__btn btn btn--large btn--outline caps"
+          }
+        },
+        "1644527071db33e58b-1": {
+          "type": "image",
+          "settings": {
+            "bg_position": "center-center",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "Image slide",
+            "description": "Tell your brand's story through images.",
+            "flex_align": "align--middle-center",
+            "text_color": "text-light",
+            "transparent": true,
+            "link_text": "View products",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "hero__btn btn btn--large btn--outline caps"
+          }
+        }
+      },
+      "block_order": [
+        "1644527071db33e58b-0",
+        "1644527071db33e58b-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "screen-height-two-thirds",
+        "transition": "slide",
+        "arrows_style": true,
+        "dots_style": "hidden",
+        "autoplay": false,
+        "autoplay_speed": 8
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "main",
+    "subcollections",
+    "16445270712bdabb3b"
+  ]
+}

@@ -1,0 +1,61 @@
+<!-- /snippets/pagination-custom.liquid -->
+{% comment %}
+  * This snippet renders a custom widget based on the current 'paginate' context,
+  {% render 'pagination-custom', paginate: paginate %}
+{% endcomment %}
+
+{% if paginate.pages > 1 %}
+
+  <load-more class="load-more_wrap" 
+           data-next-url="{{ paginate.next.url }}"
+           data-current-page="{{ paginate.current_page  }}" 
+           data-total-pages="{{ paginate.pages }}"
+           data-page-size="{{ paginate.page_size }}" 
+           data-total-items="{{paginate.items}}">
+ <button class="load-more_row button button--secondary js-load-more " type="button" >Load More</button>
+  <div class="load-more_row gog">
+   <span load-items-count>{{ paginate.page_size }}</span> out of {{paginate.items}} pieces
+  </div>
+</load-more>
+
+
+
+
+{% endif %}
+
+
+
+<script>
+class LoadMore extends HTMLElement {
+ constructor() {
+  super();
+  this.addEventListener("click", this.loadMoreItems);
+ }
+loadMoreItems() { 
+ const loadMoreBtn = this.querySelector('[type="button"]');
+ loadMoreBtn.setAttribute("disabled", true);
+ let { currentPage, pageSize, nextUrl, totalItems } = this.dataset
+ let nextPage = parseInt(this.dataset.currentPage) + 1
+fetch(nextUrl.replace(/page=[0-9]+/, 'page=' + nextPage))
+ .then(response => response.text())
+ .then((responseText) => {
+  const html = responseText;
+  $('#CollectionLoop')
+   .append($(html)
+   .find('#CollectionLoop')
+   .html());
+  })
+ .catch((e) => {
+     console.error(e);
+  })
+ .finally(() => {
+  loadMoreBtn.removeAttribute("disabled");
+  this.dataset.currentPage = parseInt(this.dataset.currentPage) + 1;
+  let isLastPage = parseInt(totalItems) - (nextPage * parseInt(pageSize)) < 0
+  this.querySelector('[load-items-count]').innerHTML = isLastPage ? parseInt(totalItems) : nextPage * parseInt(pageSize)
+  isLastPage && loadMoreBtn.setAttribute("disabled", true);
+ });
+ }
+}
+customElements.define('load-more', LoadMore);
+</script>

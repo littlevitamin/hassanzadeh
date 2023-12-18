@@ -1,0 +1,368 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "section-slideshow",
+      "blocks": {
+        "slideshow-1": {
+          "type": "image",
+          "settings": {
+            "bg_position": "center-center",
+            "image": "shopify:\/\/shop_images\/1880_11.webp",
+            "mobile_image": "shopify:\/\/shop_images\/1880_mobile_11.webp",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "",
+            "description": "",
+            "flex_align": "align--middle-center",
+            "text_color": "text-dark",
+            "transparent": true,
+            "link_text": "",
+            "link": "shopify:\/\/collections",
+            "button_color": "btn--white",
+            "button_style": "hero__btn btn btn--input btn--outline caps"
+          }
+        },
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "bg_position": "center-center",
+            "image": "shopify:\/\/shop_images\/1880_22_b0f6393f-9e08-42c6-944f-9977bf728b68.webp",
+            "mobile_image": "shopify:\/\/shop_images\/1880_mobile_2.webp",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "",
+            "description": "",
+            "flex_align": "align--middle-center",
+            "text_color": "text-light",
+            "transparent": true,
+            "link_text": "",
+            "link": "shopify:\/\/collections",
+            "button_color": "btn--white",
+            "button_style": "hero__btn btn btn--large btn--outline caps"
+          }
+        },
+        "c4d44b9a-dfdc-4405-b99d-a9f5e04e9539": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "bg_position": "center-center",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "",
+            "description": "We hire your Desire! Find incarnate of your Desire here Check out our New collection to see the newest Fashion and pick your souvenir from the heart of the earth!",
+            "flex_align": "align--middle-right",
+            "text_color": "text-light",
+            "transparent": true,
+            "link_text": "Shop All",
+            "link": "shopify:\/\/collections",
+            "button_color": "btn--white",
+            "button_style": "hero__btn btn btn--input btn--outline caps"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-1",
+        "slideshow-0",
+        "c4d44b9a-dfdc-4405-b99d-a9f5e04e9539"
+      ],
+      "settings": {
+        "height": "sixty-fifty-height-hero",
+        "transition": "fade",
+        "arrows_style": false,
+        "dots_style": "hidden",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "tabs": {
+      "type": "section-tab-collections",
+      "blocks": {
+        "95176895-f992-4ec5-b24c-2b1af69d2572": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "featured_collection": "rings",
+            "show_image": true,
+            "image": "shopify:\/\/shop_images\/HZ-Mdl09--Tir02.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "text_color": "text-light",
+            "link_text": "Shop Rings",
+            "link": "shopify:\/\/collections\/rings",
+            "button_color": "btn--white",
+            "button_style": "hero__btn btn btn--input btn--outline caps"
+          }
+        },
+        "tabs-1": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "featured_collection": "necklaces",
+            "show_image": true,
+            "image": "shopify:\/\/shop_images\/HZ-Model-05---Shah02.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "text_color": "text-light",
+            "link_text": "Shop Necklaces",
+            "link": "shopify:\/\/collections\/necklaces",
+            "button_color": "btn--white",
+            "button_style": "hero__btn btn btn--input btn--outline caps"
+          }
+        },
+        "tabs-0": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "featured_collection": "earrings",
+            "show_image": true,
+            "image": "shopify:\/\/shop_images\/POST-2.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "text_color": "text-light",
+            "link_text": "Shop Earrings",
+            "link": "shopify:\/\/collections\/earrings",
+            "button_color": "btn--white",
+            "button_style": "hero__btn btn btn--input btn--outline caps"
+          }
+        },
+        "71af0526-21ac-4261-9add-5db4a4ae6d9e": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "featured_collection": "bracelet",
+            "show_image": true,
+            "image": "shopify:\/\/shop_images\/5031-1.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "text_color": "text-light",
+            "link_text": "Shop Bracelets",
+            "link": "shopify:\/\/collections\/bracelet",
+            "button_color": "btn--white",
+            "button_style": "hero__btn btn btn--input btn--outline caps"
+          }
+        }
+      },
+      "block_order": [
+        "95176895-f992-4ec5-b24c-2b1af69d2572",
+        "tabs-1",
+        "tabs-0",
+        "71af0526-21ac-4261-9add-5db4a4ae6d9e"
+      ],
+      "settings": {
+        "title": "Shop by Category"
+      }
+    },
+    "rich-text": {
+      "type": "section-rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Our Promise to stand by you in your most beautiful moments",
+        "text": "<p>We are committed to quality products that are manufactured ethically and sustainably. All of our pieces are traceable throughout the supply chain. We strive to ensure our products contribute to the well-being of people and planet, and our efforts put us on track towards a brighter future.<\/p>",
+        "text_size": 2,
+        "text_columns": 1,
+        "align_text": "text-center",
+        "button_text": "Shop Weddings",
+        "button_url": "",
+        "button_color": "btn--link",
+        "button_style": "caps--large",
+        "height": "margin--medium",
+        "width": "wrapper",
+        "text_color": "text-dark",
+        "bg_color": "#ffffff"
+      }
+    },
+    "16439930647fd7df4f": {
+      "type": "custom-content-lv",
+      "blocks": {
+        "286d1aa2-f79f-4f0c-824a-aa03fb0bfcd4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HZ-07---Shah02.jpg",
+            "bg_position": "center-center",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "",
+            "description": "",
+            "flex_align": "align--middle-center",
+            "text_color": "text-light",
+            "transparent": true,
+            "link_text": "",
+            "link": "",
+            "link_textt": "",
+            "linkk": "shopify:\/\/collections\/wedding-rings-1",
+            "button_color": "btn--white",
+            "button_style": "hero__btn btn btn--large btn--outline caps"
+          }
+        },
+        "92d7637a-6a93-4615-ac71-ed2fcfa08511": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HZ-09---Shah02.jpg",
+            "bg_position": "center-center",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "title": "",
+            "description": "",
+            "flex_align": "align--middle-center",
+            "text_color": "text-light",
+            "transparent": true,
+            "link_text": "",
+            "link": "",
+            "link_textt": "View products",
+            "linkk": "",
+            "button_color": "btn--white",
+            "button_style": "hero__btn btn btn--large btn--outline caps"
+          }
+        }
+      },
+      "block_order": [
+        "286d1aa2-f79f-4f0c-824a-aa03fb0bfcd4",
+        "92d7637a-6a93-4615-ac71-ed2fcfa08511"
+      ],
+      "settings": {
+        "height": "five-fifty-height-hero",
+        "padding": true,
+        "title": "Our Promise to stand by you in your most beautiful moments",
+        "description": "<p>We are committed to quality products that are manufactured ethically and sustainably. All of our pieces are traceable throughout the supply chain. We strive to ensure our products contribute to the well-being of people and planet, and our efforts put us on track towards a brighter future.<\/p>",
+        "link_text": "Shop Weddings",
+        "link": "shopify:\/\/collections\/earrings",
+        "borders": false,
+        "wrapper": true
+      }
+    },
+    "16442363668a1cf5d0": {
+      "type": "section-shop-the-look-lv",
+      "blocks": {
+        "1644236366c74ff7f0-0": {
+          "type": "product",
+          "settings": {
+            "product": "pear-cut-diamond-earrings",
+            "position_x": 100,
+            "position_y": 100
+          }
+        },
+        "1644236366c74ff7f0-1": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "position_x": 0,
+            "position_y": 0
+          }
+        },
+        "acc111a3-2cf8-45a5-a518-758f52b0d59d": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "position_x": 0,
+            "position_y": 0
+          }
+        }
+      },
+      "block_order": [
+        "1644236366c74ff7f0-0",
+        "1644236366c74ff7f0-1",
+        "acc111a3-2cf8-45a5-a518-758f52b0d59d"
+      ],
+      "disabled": true,
+      "settings": {
+        "titlenew": "Sample From Collections",
+        "description": "",
+        "bg_position": "left-center",
+        "title": "Shop this earrings",
+        "section_bg": "#fafafa",
+        "dot_color": "#ffffff"
+      }
+    },
+    "1643712269452c687b": {
+      "type": "section-collection-carousel",
+      "settings": {
+        "heading": "Curated for you",
+        "description": "",
+        "text_alignment": "center",
+        "link_text": "",
+        "link_url": "",
+        "button_color": "btn--black",
+        "button_style": "hero__btn btn btn--input btn--outline caps",
+        "featured_collection": "necklaces"
+      }
+    },
+    "1643811237f0a38ea9": {
+      "type": "section-blog",
+      "settings": {
+        "blog_name": "news",
+        "title": "Our Blogs",
+        "grid": 5,
+        "rows": 1,
+        "aspect_ratio": 1,
+        "show_tags": false,
+        "show_author": false,
+        "show_date": true,
+        "show_button": true,
+        "show_comments": false
+      }
+    },
+    "1645091732d5838f5c": {
+      "type": "apps",
+      "blocks": {
+        "883954ed-d5a8-4859-8e96-9d77a6956fdd": {
+          "type": "shopify:\/\/apps\/covet-instagram-feed-reviews\/blocks\/app-block-standard\/577480e8-b5be-4890-968c-06ccfb458c74",
+          "disabled": true,
+          "settings": {
+            "gallery_embed_id": 216616,
+            "show_text": true,
+            "title_text": "Styled on Instagram",
+            "title_color": "#183e22",
+            "title_size": 32,
+            "subtitle_text": "",
+            "subtitle_color": "#000000",
+            "subtitle_size": 14,
+            "text_alignment": "center",
+            "margin": 35,
+            "custom_html_above": "",
+            "custom_html_below": ""
+          }
+        }
+      },
+      "block_order": [
+        "883954ed-d5a8-4859-8e96-9d77a6956fdd"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "e320ff36-af25-436b-a6db-0170a720988e": {
+      "type": "section-blog",
+      "disabled": true,
+      "settings": {
+        "blog_name": "",
+        "title": "News",
+        "grid": 4,
+        "rows": 1,
+        "aspect_ratio": 1,
+        "show_tags": false,
+        "show_author": false,
+        "show_date": true,
+        "show_button": true,
+        "show_comments": false
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "tabs",
+    "rich-text",
+    "16439930647fd7df4f",
+    "16442363668a1cf5d0",
+    "1643712269452c687b",
+    "1643811237f0a38ea9",
+    "1645091732d5838f5c",
+    "e320ff36-af25-436b-a6db-0170a720988e"
+  ]
+}

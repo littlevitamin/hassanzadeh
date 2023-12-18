@@ -1,0 +1,126 @@
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "price_and_title": {
+          "type": "price_and_title",
+          "settings": {
+            "subheading_option": "breadcrumb",
+            "show_rating": true,
+            "enable_star_rating": true,
+            "show_rating_count": false
+          }
+        },
+        "form": {
+          "type": "form",
+          "settings": {
+            "info_page": "find-my-size",
+            "show_labels": true,
+            "show_quantity": false,
+            "show_payment_button": false,
+            "subscriptions_enable_selectors": true
+          }
+        },
+        "tabs": {
+          "type": "tab_richtext",
+          "settings": {
+            "show_read_more": false,
+            "style": "accordions",
+            "title_1": "Specifications",
+            "raw_content_1": "<p>{{ product.metafields.my_fields.metal.value }}<\/p><p>{{ product.metafields.my_fields.gemstones.value }}<\/p><p>{{ product.metafields.custom.stone | metafield_tag }}<\/p><p>{{ product.metafields.productDetails.sku.value }}<\/p>",
+            "title_2": "Shipping & Returns",
+            "raw_content_2": "<p>You can use product metafields to assign content to this tab that is unique to an individual product.  Use tabs to highlight unique features, sizing information, or other sales information.<\/p>",
+            "title_3": "",
+            "raw_content_3": "",
+            "title_4": "",
+            "raw_content_4": "",
+            "title_5": "",
+            "raw_content_5": ""
+          }
+        }
+      },
+      "block_order": [
+        "price_and_title",
+        "form",
+        "tabs"
+      ],
+      "settings": {
+        "product_sticky_enable": false,
+        "image_layout": "thumbnails",
+        "image_size": "small",
+        "show_cart_bar": true,
+        "enable_zoom": true,
+        "enable_video_looping": false
+      }
+    },
+    "reviews": {
+      "type": "reviews",
+      "disabled": true,
+      "settings": {
+        "enable_product_reviews": true,
+        "enable_accordion": false
+      }
+    },
+    "related": {
+      "type": "related",
+      "settings": {
+        "related_products_enable": true,
+        "limit": 8,
+        "product_recommendations_heading": "You might also like",
+        "show_recently_viewed": false,
+        "product_recently_limit": 6,
+        "product_recently_heading": "Recently viewed"
+      }
+    },
+    "1644843062defb4e43": {
+      "type": "section-collection-carousel",
+      "disabled": true,
+      "settings": {
+        "heading": "You might also like",
+        "description": "",
+        "text_alignment": "center",
+        "link_text": "",
+        "link_url": "",
+        "button_color": "btn--black",
+        "button_style": "hero__btn btn btn--input btn--outline caps",
+        "featured_collection": "rings"
+      }
+    },
+    "1645200191c289dd2b": {
+      "type": "apps",
+      "blocks": {
+        "aced90c6-7837-4194-9e58-fab338d0b054": {
+          "type": "shopify:\/\/apps\/covet-pics-instagram-feed\/blocks\/app-block-standard\/577480e8-b5be-4890-968c-06ccfb458c74",
+          "settings": {
+            "gallery_embed_id": 216764,
+            "show_text": true,
+            "title_text": "Styled on Instagram",
+            "title_color": "#043f14",
+            "title_size": 32,
+            "subtitle_text": "",
+            "subtitle_color": "#000000",
+            "subtitle_size": 24,
+            "text_alignment": "center",
+            "margin": 35,
+            "custom_html_above": "",
+            "custom_html_below": ""
+          }
+        }
+      },
+      "block_order": [
+        "aced90c6-7837-4194-9e58-fab338d0b054"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "reviews",
+    "related",
+    "1644843062defb4e43",
+    "1645200191c289dd2b"
+  ]
+}
