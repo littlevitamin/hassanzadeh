@@ -1,5 +1,3 @@
-<!-- /snippets/collection-sorting.liquid -->
-
 {% comment %}
     Renders a sorting dropdown for a collection
 
@@ -10,8 +8,10 @@
     {%- render 'collection-sorting' collection: collection -%}
 {% endcomment %}
 
-{%- assign sort_options = search.sort_options | default: collection.sort_options -%}
-{%- assign sort_by = search.sort_by | default: collection.sort_by -%}
+{%- assign search_sort_options = collection.sort_options -%}
+{%- assign search_sort_by = collection.sort_by -%}
+{%- assign sort_options = search.sort_options | default: search_sort_options -%}
+{%- assign sort_by = search.sort_by | default: search_sort_by -%}
 {%- assign sort_translation = 'collections.general.sort' | t -%}
 {% assign currently_selected = sort_options | where: "value", sort_by | first %}
 
