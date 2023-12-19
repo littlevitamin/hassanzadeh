@@ -3358,3 +3358,7 @@ a.navlink.navlink--grandchild.all .navtext {
 .swym-icon::before {
   color: #F8F8F8!important;
 }
+
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-image-wrapper {
+  height: 100%!important;
+}
