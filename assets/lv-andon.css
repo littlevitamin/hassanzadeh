@@ -3362,3 +3362,7 @@ a.navlink.navlink--grandchild.all .navtext {
 .swym-ui-component .swym-wishlist-grid .swym-wishlist-image-wrapper {
   height: 100%!important;
 }
+
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-image-wrapper {
+  max-height: unset!important;
+}
