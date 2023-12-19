@@ -89,6 +89,8 @@
         </nav>
       {%- endif -%}
 
+  {% render 'collection-sorting' %}
+
       <div class="collection__products{% if show_group_tags %} collection__products--group-tags{% endif %}">
         {%- if show_group_tags -%}
           <div class="{{ collection_sidebar_class }}" id="filter-groups" data-collection-sidebar>
