@@ -28,7 +28,7 @@
             "show_read_more": false,
             "style": "accordions",
             "title_1": "Specifications",
-            "raw_content_1": "<p>{{ product.metafields.my_fields.metal.value }}<\/p><p>{{ product.metafields.my_fields.gemstones.value }}<\/p><p>{{ product.metafields.custom.stone | metafield_tag }}<\/p><p>{{ product.metafields.productDetails.sku.value }}<\/p>",
+            "raw_content_1": "<p>{{ product.metafields.my_fields.metal.value }}<\/p><p>{{ product.metafields.my_fields.gemstones.value }}<\/p><p>{{ product.metafields.custom.stone | metafield_tag }}<\/p>",
             "title_2": "Shipping & Returns",
             "raw_content_2": "<p>You can use product metafields to assign content to this tab that is unique to an individual product.  Use tabs to highlight unique features, sizing information, or other sales information.<\/p>",
             "title_3": "",
@@ -91,7 +91,7 @@
       "type": "apps",
       "blocks": {
         "aced90c6-7837-4194-9e58-fab338d0b054": {
-          "type": "shopify:\/\/apps\/covet-pics-instagram-feed\/blocks\/app-block-standard\/577480e8-b5be-4890-968c-06ccfb458c74",
+          "type": "shopify:\/\/apps\/covet-instagram-feed-reviews\/blocks\/app-block-standard\/577480e8-b5be-4890-968c-06ccfb458c74",
           "settings": {
             "gallery_embed_id": 216764,
             "show_text": true,
