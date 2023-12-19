@@ -50,9 +50,44 @@
         <p class="search__caption caps">{{ 'general.search.results_for' | t }} <span class="strong">{{ search.terms | escape }}</span></p>
       {%- endif -%}
 
+      {%- assign align_classes = '' -%}
+      {%- if show_sort -%}
+        {%- assign align_classes = align_classes | append: ' collection__nav--sort ' -%}
+      {%- endif -%}
 
+      {%- if show_group_tags -%}
+        {% assign align_classes = align_classes | append: ' collection__nav--filter ' %}
+      {%- endif -%}
 
-  {% render 'collection-sorting' %}
+      {%- if show_sort or show_group_tags -%}
+        <nav class="collection__nav {{ align_classes }}" data-collection-nav>
+          {%- if show_group_tags -%}
+            <div class="popout--group">
+              <button
+                type="button"
+                class="popout__toggle"
+                aria-expanded="{% if show_group_filters %}true{% else %}false{% endif %}"
+                aria-controls="filter-groups"
+                data-aria-toggle
+                data-group-tags-enabled>
+                {{ 'collections.general.filter' | t }}
+
+                {%- assign filter_active_count = 0 -%}
+                {%- for filter in search.filters -%}
+                  {%- assign filter_active_count = filter_active_count | plus: filter.active_values.size -%}
+                {%- endfor -%}
+
+                <span{% if filter_active_count < 1 %} class="hidden"{% endif %} data-active-filters>{{filter_active_count}}</span>
+           {%- comment -%}     {%- render 'icon-filter' -%} {%- endcomment -%}
+                <img src="{{ 'icondown.png' | asset_url }}" class="icon icon--wide icon-filter">
+              </button>
+            </div>
+          {%- endif -%}
+          {%- if show_sort -%}
+            {% render 'collection-sorting' %}
+          {%- endif -%}
+        </nav>
+      {%- endif -%}
 
       <div class="collection__products{% if show_group_tags %} collection__products--group-tags{% endif %}">
         {%- if show_group_tags -%}
