@@ -3360,7 +3360,7 @@ a.navlink.navlink--grandchild.all .navtext {
 }
 
 .swym-ui-component .swym-wishlist-grid .swym-wishlist-image-wrapper {
-  height: unset%!important;
+  height: unset!important;
 }
 
 .swym-ui-component .swym-wishlist-grid .swym-wishlist-image-wrapper {
