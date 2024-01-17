@@ -456,11 +456,11 @@
           id="btnn-one"
           data-add-to-cart
           data-focus-element
-          {% unless product.variants | where: 'available', true != empty %}disabled="disabled"{% endunless %}>
+          {% unless has_available_variant %}disabled="disabled"{% endunless %}>
           <span data-add-to-cart-text>
-            {%- if product_available and product.tags contains '_preorder' -%}
+            {%- if has_available_variant and product.tags contains '_preorder' -%}
               {{ 'products.product.pre_order' | t }}
-            {%- elsif product_available -%}
+            {%- elsif has_available_variant -%}
               {{ 'products.product.add_to_cart' | t }}
             {%- else -%}
               {{ 'products.product.sold_out' | t }}
@@ -474,16 +474,21 @@
         </button>
       </div>
       
+      {% assign has_available_variant = false %}
+      {% for variant in product.variants %}
+        {% if variant.available %}
+          {% assign has_available_variant = true %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      
       <script>
         document.addEventListener("DOMContentLoaded", function () {
           var addToCartButton = document.getElementById("btnn-one");
-          var variants = {{ product.variants | json }};
-          var product_available = variants.some(function(variant) {
-            return variant.available;
-          });
+          var hasAvailableVariant = {{ has_available_variant | json }};
       
           addToCartButton.addEventListener("click", function (event) {
-            if (!product_available) {
+            if (!hasAvailableVariant) {
               event.preventDefault();
             }
           });
