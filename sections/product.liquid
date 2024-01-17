@@ -288,8 +288,8 @@
 
                 <label for="size">Select Size:</label>
                   <select name="size" id="size">
-                    {% for value in product.metafields.custom.size.values %}
-                      <option value="{{ value }}">{{ value }}</option>
+                    {% for size in product.metafields.custom.size.value %}
+                      <option value="{{ size }}">{{ size }}</option>
                     {% endfor %}
                   </select>
 
