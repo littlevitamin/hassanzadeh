@@ -456,7 +456,7 @@
           id="btnn-one"
           data-add-to-cart
           data-focus-element
-          {% for variant in product.variants %}{% if variant.available == false %}disabled="disabled"{% endif %}{% endfor %}
+          {% unless product.variants | where: 'available', true | size > 0 %}disabled="disabled"{% endunless %}>
           <span data-add-to-cart-text>
             {%- if product_available and product.tags contains '_preorder' -%}
               {{ 'products.product.pre_order' | t }}
@@ -478,17 +478,9 @@
         document.addEventListener("DOMContentLoaded", function () {
           var addToCartButton = document.getElementById("btnn-one");
           var variants = {{ product.variants | json }};
-          var product_available = checkProductAvailability(variants);
-      
-          function checkProductAvailability(variants) {
-            for (var i = 0; i < variants.length; i++) {
-              if (variants[i].inventory_quantity === 0) {
-                return false;
-              }
-            }
-            return true;
-            console.log('hi');
-          }
+          var product_available = variants.some(function(variant) {
+            return variant.available;
+          });
       
           addToCartButton.addEventListener("click", function (event) {
             if (!product_available) {
@@ -497,7 +489,6 @@
           });
         });
       </script>
-
 
       
       {% if buybutton_setting %}
