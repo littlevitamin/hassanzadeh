@@ -423,7 +423,7 @@
 {%- endcomment -%}
       
 
-    {% assign variant_availabilities = product.variants | map: 'available' | join: ',' %}
+      {% assign variant_availabilities = product.variants | map: 'available' | join: ',' %}
 
       <div class="product__submit__item">
         <button
@@ -433,8 +433,7 @@
           id="btnn-one"
           data-add-to-cart
           data-focus-element
-          disabled
-          {% if variant_availabilities contains 'false' %}disabled{% endif %}>
+          {% if variant_availabilities contains 'false' %}disabled="disabled"{% endif %}>
           <span data-add-to-cart-text>
             {%- if product_available and product.tags contains '_preorder' -%}
               {{ 'products.product.pre_order' | t }}
@@ -451,10 +450,21 @@
           </svg>
         </button>
       </div>
+      
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var addToCartButton = document.getElementById("btnn-one");
+          var variantAvailabilities = "{{ variant_availabilities }}";
+      
+          addToCartButton.addEventListener("click", function (event) {
+            if (variantAvailabilities.includes('false')) {
+              event.preventDefault();
+              return false;
+            }
+          });
+        });
+      </script>
 
-
-      {{ variant_availabilities }}
-      {% if variant_availabilities contains 'false' %}disabled="disabled"{% endif %}
       
       {% if buybutton_setting %}
         <div class="product__submit__item">
