@@ -454,6 +454,8 @@
               {% endif -%}
             </p>  
           </a>
+
+          {{ product.metafields.custom.size }}
           
           {%- form 'product', upsell_product -%}
             <input type="hidden" name="id" value="{{ upsell_variant.id }}">
