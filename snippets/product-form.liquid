@@ -479,6 +479,8 @@
           var addToCartButton = document.getElementById("btnn-one");
           var variants = {{ product.variants | json }};
           var product_available = checkProductAvailability(variants);
+
+          console.log(variants);
       
           function checkProductAvailability(variants) {
             for (var i = 0; i < variants.length; i++) {
