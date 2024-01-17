@@ -286,12 +286,14 @@
   </div>
 </div>
 
+              {% if product.metafields.custom.size.value != blank %}
                 <label for="size">Select Size:</label>
                   <select name="size" id="size">
                     {% for size in product.metafields.custom.size.value %}
                       <option value="{{ size }}">{{ size }}</option>
                     {% endfor %}
                   </select>
+              {% endif %}
 
                 {%- when 'form' -%}
                   {%- assign hide_labels_class = '' -%}
