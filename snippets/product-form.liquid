@@ -449,54 +449,55 @@
       </div> -->
 
       <div class="product__submit__item">
-      <button
-        type="submit"
-        name="add"
-        class="btn product__submit__add trt"
-        id="btnn-one"
-        data-add-to-cart
-        data-focus-element
-        {% unless product_available %}disabled="disabled"{% endunless %}>
-        <span data-add-to-cart-text>
-          {%- if product_available and product.tags contains '_preorder' -%}
-            {{ 'products.product.pre_order' | t }}
-          {%- elsif product_available -%}
-            {{ 'products.product.add_to_cart' | t }}
-          {%- else -%}
-            {{ 'products.product.sold_out' | t }}
-          {%- endif -%}
-        </span>
-    
-        <svg height="18" width="18" class="svg-loader">
-          <circle r="7" cx="9" cy="9" />
-          <circle stroke-dasharray="87.96459430051421 87.96459430051421" r="7" cx="9" cy="9" />
-        </svg>
-      </button>
-    </div>
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var addToCartButton = document.getElementById("btnn-one");
-        var variants = {{ product.variants | json }};
-        var product_available = checkProductAvailability(variants);
-    
-        function checkProductAvailability(variants) {
-          for (var i = 0; i < variants.length; i++) {
-            if (!variants[i].available) {
-              return false;
+        <button
+          type="submit"
+          name="add"
+          class="btn product__submit__add trt"
+          id="btnn-one"
+          data-add-to-cart
+          data-focus-element
+          {% unless product_available %}disabled="disabled"{% endunless %}>
+          <span data-add-to-cart-text>
+            {%- if product_available and product.tags contains '_preorder' -%}
+              {{ 'products.product.pre_order' | t }}
+            {%- elsif product_available -%}
+              {{ 'products.product.add_to_cart' | t }}
+            {%- else -%}
+              {{ 'products.product.sold_out' | t }}
+            {%- endif -%}
+          </span>
+      
+          <svg height="18" width="18" class="svg-loader">
+            <circle r="7" cx="9" cy="9" />
+            <circle stroke-dasharray="87.96459430051421 87.96459430051421" r="7" cx="9" cy="9" />
+          </svg>
+        </button>
+      </div>
+      
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var addToCartButton = document.getElementById("btnn-one");
+          var variants = {{ product.variants | json }};
+          var product_available = checkProductAvailability(variants);
+      
+          function checkProductAvailability(variants) {
+            for (var i = 0; i < variants.length; i++) {
+              if (!variants[i].available) {
+                return false;
+              }
             }
+            return true;
           }
-          return true;
-        }
-    
-        addToCartButton.addEventListener("click", function (event) {
-          if (!product_available) {
-            event.preventDefault();
-            alert("All variants must be available to add to cart.");
-          }
+      
+          addToCartButton.addEventListener("click", function (event) {
+            if (!product_available) {
+              event.preventDefault();
+              alert("All variants must be available to add to cart.");
+            }
+          });
         });
-      });
-    </script>
+      </script>
+
 
       
       {% if buybutton_setting %}
