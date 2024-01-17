@@ -456,7 +456,7 @@
           id="btnn-one"
           data-add-to-cart
           data-focus-element
-          {% unless product.variants | where: 'available', true | size > 0 %}disabled="disabled"{% endunless %}>
+          {% unless product.variants | where: 'available', true != empty %}disabled="disabled"{% endunless %}>
           <span data-add-to-cart-text>
             {%- if product_available and product.tags contains '_preorder' -%}
               {{ 'products.product.pre_order' | t }}
@@ -489,6 +489,7 @@
           });
         });
       </script>
+
 
       
       {% if buybutton_setting %}
