@@ -433,6 +433,7 @@
           id="btnn-one"
           data-add-to-cart
           data-focus-element
+          disabled
           {% if variant_availabilities contains 'false' %}disabled{% endif %}>
           <span data-add-to-cart-text>
             {%- if product_available and product.tags contains '_preorder' -%}
