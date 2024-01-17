@@ -150,6 +150,9 @@
   {% comment %} The input with name="id" submits to cart {% endcomment %} 
   <input type="hidden" name="id" value="{{ current_variant.id }}">
 
+  <input type="hidden" name="properties[_size]" value="" id="selected-size">
+
+
   {% unless block.settings.show_quantity %}
     <input type="hidden" name="quantity" value="1">
   {% endunless %}
