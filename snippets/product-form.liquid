@@ -473,8 +473,6 @@
           </svg>
         </button>
       </div>
-
-      <!-- {{ product.variants | json }} -->
       
       <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -484,7 +482,7 @@
       
           function checkProductAvailability(variants) {
             for (var i = 0; i < variants.length; i++) {
-              if (!variants[i].available) {
+              if (variants[i].inventory_quantity === 0) {
                 return false;
               }
             }
@@ -494,7 +492,6 @@
           addToCartButton.addEventListener("click", function (event) {
             if (!product_available) {
               event.preventDefault();
-              alert("All variants must be available to add to cart.");
             }
           });
         });
