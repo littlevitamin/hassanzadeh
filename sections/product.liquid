@@ -293,6 +293,8 @@
                     {% endfor %}
                   </select>
 
+                {{ product.metafields.custom.size.value }}
+
                 {%- when 'form' -%}
                   {%- assign hide_labels_class = '' -%}
                   {%- if block.settings.show_labels == false -%}
