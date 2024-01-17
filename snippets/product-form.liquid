@@ -456,7 +456,7 @@
           id="btnn-one"
           data-add-to-cart
           data-focus-element
-          {% unless has_available_variant %}disabled="disabled"{% endunless %}>
+          {% if product.variants | map: 'available' | contains: false %}disabled="disabled"{% endif %}>
           <span data-add-to-cart-text>
             {%- if has_available_variant and product.tags contains '_preorder' -%}
               {{ 'products.product.pre_order' | t }}
