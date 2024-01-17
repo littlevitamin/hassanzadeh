@@ -447,6 +447,8 @@
           </svg>
         </button>
       </div>
+
+      {{ product.variants | map: 'available' }}
       
       {% if buybutton_setting %}
         <div class="product__submit__item">
