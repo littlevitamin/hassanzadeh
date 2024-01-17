@@ -456,7 +456,8 @@
           id="btnn-one"
           data-add-to-cart
           data-focus-element
-          {% unless product_available %}disabled="disabled"{% endunless %}>
+          <!-- {% unless product_available %}disabled="disabled"{% endunless %}> -->
+  {% for variant in product.variants %}{% if variant.available == false %}disabled="disabled"{% endif %}{% endfor %}
           <span data-add-to-cart-text>
             {%- if product_available and product.tags contains '_preorder' -%}
               {{ 'products.product.pre_order' | t }}
@@ -473,8 +474,6 @@
           </svg>
         </button>
       </div>
-
-      {{ product.variants.available }}
       
       <script>
         document.addEventListener("DOMContentLoaded", function () {
