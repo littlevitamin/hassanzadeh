@@ -422,9 +422,6 @@
       </div>
 {%- endcomment -%}
       
-
-    {% assign variant_availabilities = product.variants | map: 'available' | join: ',' %}
-
       <div class="product__submit__item">
         <button
           type="submit"
@@ -433,17 +430,17 @@
           id="btnn-one"
           data-add-to-cart
           data-focus-element
-          {% if variant_availabilities contains 'false' %}disabled{% endif %}>
+          {% unless current_variant.available %}disabled="disabled"{% endunless %}>
           <span data-add-to-cart-text>
-            {%- if product_available and product.tags contains '_preorder' -%}
+            {%- if current_variant.available and product.tags contains '_preorder' -%}
               {{ 'products.product.pre_order' | t }}
-            {%- elsif product_available -%}
+            {%- elsif current_variant.available -%}
               {{ 'products.product.add_to_cart' | t }}
             {%- else -%}
               {{ 'products.product.sold_out' | t }}
             {%- endif -%}
           </span>
-      
+
           <svg height="18" width="18" class="svg-loader">
             <circle r="7" cx="9" cy="9" />
             <circle stroke-dasharray="87.96459430051421 87.96459430051421" r="7" cx="9" cy="9" />
