@@ -22,6 +22,8 @@
             {{- line_item.product.title | strip_html -}}
           </a>
         </h4>
+
+        Size: {{ line_item.properties._size }}
   
         <div class="cart-item__meta">
           {%- unless line_item.product.has_only_default_variant -%}
