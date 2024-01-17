@@ -453,6 +453,7 @@
 
 
       {{ variant_availabilities }}
+      {% if variant_availabilities contains 'false' %}disabled="disabled"{% endif %}>
       
       {% if buybutton_setting %}
         <div class="product__submit__item">
