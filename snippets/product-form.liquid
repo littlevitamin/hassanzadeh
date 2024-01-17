@@ -474,10 +474,10 @@
         </button>
       </div>
       
-      {% assign has_available_variant = false %}
+      {% assign has_available_variant = true %}
       {% for variant in product.variants %}
-        {% if variant.available %}
-          {% assign has_available_variant = true %}
+        {% if variant.available == false %}
+          {% assign has_available_variant = false %}
           {% break %}
         {% endif %}
       {% endfor %}
