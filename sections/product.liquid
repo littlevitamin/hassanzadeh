@@ -107,7 +107,7 @@
         </div>
       {%- endif -%}
     </div>
-{{ product.metafields.custom.size }}
+
     <div class="grid__item medium-up--one-half">
       <div class="form__wrapper{% unless current_variant.available %} variant--soldout{% endunless %}" data-form-wrapper>
         <div class="form__inner__wrapper">
@@ -285,6 +285,14 @@
     
   </div>
 </div>
+
+                <label for="size">Select Size:</label>
+                  <select name="size" id="size">
+                    {% for option in product.metafields.custom.size.options %}
+                      <option value="{{ option }}">{{ option }}</option>
+                    {% endfor %}
+                  </select>
+
                 {%- when 'form' -%}
                   {%- assign hide_labels_class = '' -%}
                   {%- if block.settings.show_labels == false -%}
