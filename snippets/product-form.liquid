@@ -422,7 +422,7 @@
       </div>
 {%- endcomment -%}
       
-      <!-- <div class="product__submit__item">
+      <div class="product__submit__item">
         <button
           type="submit"
           name="add"
@@ -446,56 +446,7 @@
             <circle stroke-dasharray="87.96459430051421 87.96459430051421" r="7" cx="9" cy="9" />
           </svg>
         </button>
-      </div> -->
-
-      <div class="product__submit__item">
-        <button
-          type="submit"
-          name="add"
-          class="btn product__submit__add trt"
-          id="btnn-one"
-          data-add-to-cart
-          data-focus-element
-          {% if product.variants | map: 'available' | contains: false %}disabled="disabled"{% endif %}>
-          <span data-add-to-cart-text>
-            {%- if has_available_variant and product.tags contains '_preorder' -%}
-              {{ 'products.product.pre_order' | t }}
-            {%- elsif has_available_variant -%}
-              {{ 'products.product.add_to_cart' | t }}
-            {%- else -%}
-              {{ 'products.product.sold_out' | t }}
-            {%- endif -%}
-          </span>
-      
-          <svg height="18" width="18" class="svg-loader">
-            <circle r="7" cx="9" cy="9" />
-            <circle stroke-dasharray="87.96459430051421 87.96459430051421" r="7" cx="9" cy="9" />
-          </svg>
-        </button>
       </div>
-      
-      {% assign has_available_variant = true %}
-      {% for variant in product.variants %}
-        {% if variant.available == false %}
-          {% assign has_available_variant = false %}
-          {% break %}
-        {% endif %}
-      {% endfor %}
-      
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          var addToCartButton = document.getElementById("btnn-one");
-          var hasAvailableVariant = {{ has_available_variant | json }};
-      
-          addToCartButton.addEventListener("click", function (event) {
-            if (!hasAvailableVariant) {
-              event.preventDefault();
-            }
-          });
-        });
-      </script>
-
-
       
       {% if buybutton_setting %}
         <div class="product__submit__item">
