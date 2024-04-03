@@ -41,6 +41,21 @@
             "featured_overlay_opacity": 10
           }
         },
+        "featured_image_Bp8yBP": {
+          "type": "featured_image",
+          "settings": {
+            "featured_collections": "bands",
+            "featured_image": "shopify:\/\/shop_images\/8459_44d43a7d-685f-48c1-8997-c25828af2c42.webp",
+            "featured_image_bg_position": "center-center",
+            "featured_heading": "mission",
+            "featured_text": "<p>new page<\/p><p><\/p>",
+            "featured_button_text": "Learn more",
+            "featured_button_link": "shopify:\/\/pages\/our-mission",
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10
+          }
+        },
         "3f0c1e8e-78d7-4234-918a-aa439790cb3a": {
           "type": "group",
           "disabled": true,
@@ -61,6 +76,7 @@
       "block_order": [
         "00e1b231-802f-405c-bc4e-dd4165be5d54",
         "6612194a-ae43-4667-8ac4-378f6aed19a3",
+        "featured_image_Bp8yBP",
         "3f0c1e8e-78d7-4234-918a-aa439790cb3a",
         "a77c87c7-e8d0-4d09-8675-eaa9555d81f8"
       ],
