@@ -29,6 +29,7 @@
         "6612194a-ae43-4667-8ac4-378f6aed19a3": {
           "type": "featured_image",
           "settings": {
+            "featured_collections": "bands",
             "featured_image": "shopify:\/\/shop_images\/4040.1.jpg",
             "featured_image_bg_position": "center-center",
             "featured_heading": "new item",
