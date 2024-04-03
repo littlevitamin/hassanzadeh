@@ -18,21 +18,6 @@
     "main": {
       "type": "collection",
       "blocks": {
-        "6612194a-ae43-4667-8ac4-378f6aed19a3": {
-          "type": "featured_image",
-          "settings": {
-            "featured_collections": "jewellery",
-            "featured_image": "shopify:\/\/shop_images\/4040.1.jpg",
-            "featured_image_bg_position": "center-center",
-            "featured_heading": "new item",
-            "featured_text": "<p>this is our newest product<\/p><p><\/p>",
-            "featured_button_text": "new product",
-            "featured_button_link": "shopify:\/\/products\/amethyst-pendant-5",
-            "featured_color_text": "#ffffff",
-            "featured_color_overlay": "#222222",
-            "featured_overlay_opacity": 10
-          }
-        },
         "featured_image_Bp8yBP": {
           "type": "featured_image",
           "settings": {
@@ -47,11 +32,26 @@
             "featured_color_overlay": "#222222",
             "featured_overlay_opacity": 10
           }
+        },
+        "6612194a-ae43-4667-8ac4-378f6aed19a3": {
+          "type": "featured_image",
+          "settings": {
+            "featured_collections": "jewellery",
+            "featured_image": "shopify:\/\/shop_images\/4040.1.jpg",
+            "featured_image_bg_position": "center-center",
+            "featured_heading": "new item",
+            "featured_text": "<p>this is our newest product<\/p><p><\/p>",
+            "featured_button_text": "new product",
+            "featured_button_link": "shopify:\/\/products\/amethyst-pendant-5",
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10
+          }
         }
       },
       "block_order": [
-        "6612194a-ae43-4667-8ac4-378f6aed19a3",
-        "featured_image_Bp8yBP"
+        "featured_image_Bp8yBP",
+        "6612194a-ae43-4667-8ac4-378f6aed19a3"
       ],
       "settings": {
         "enable_sort": true,
