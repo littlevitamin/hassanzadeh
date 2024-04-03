@@ -18,14 +18,6 @@
     "main": {
       "type": "collection",
       "blocks": {
-        "00e1b231-802f-405c-bc4e-dd4165be5d54": {
-          "type": "group",
-          "disabled": true,
-          "settings": {
-            "title": "Metal",
-            "group_tags": "Rose Gold, Platinum"
-          }
-        },
         "6612194a-ae43-4667-8ac4-378f6aed19a3": {
           "type": "featured_image",
           "settings": {
@@ -55,30 +47,11 @@
             "featured_color_overlay": "#222222",
             "featured_overlay_opacity": 10
           }
-        },
-        "3f0c1e8e-78d7-4234-918a-aa439790cb3a": {
-          "type": "group",
-          "disabled": true,
-          "settings": {
-            "title": "Stones",
-            "group_tags": "Diamond, Ruby, Emerald"
-          }
-        },
-        "a77c87c7-e8d0-4d09-8675-eaa9555d81f8": {
-          "type": "group",
-          "disabled": true,
-          "settings": {
-            "title": "Styles",
-            "group_tags": "Initial Rings, Solitare, Eternity"
-          }
         }
       },
       "block_order": [
-        "00e1b231-802f-405c-bc4e-dd4165be5d54",
         "6612194a-ae43-4667-8ac4-378f6aed19a3",
-        "featured_image_Bp8yBP",
-        "3f0c1e8e-78d7-4234-918a-aa439790cb3a",
-        "a77c87c7-e8d0-4d09-8675-eaa9555d81f8"
+        "featured_image_Bp8yBP"
       ],
       "settings": {
         "enable_sort": true,
