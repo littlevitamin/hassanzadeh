@@ -3376,3 +3376,9 @@ a.navlink.navlink--grandchild.all .navtext {
 .product-item--featured-image {
   width: 50%;
 }
+
+@media only screen and (max-width: 990px) {
+  .product-item--featured-image {
+    width: 100%;
+  }
+}
