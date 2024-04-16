@@ -106,7 +106,6 @@
           },
           "bb2cf87d-08d9-451a-b3ef-e3a3587e0275": {
             "type": "image",
-            "disabled": true,
             "settings": {
               "position": "4",
               "image": "shopify:\/\/shop_images\/Mordad-7617.png",
@@ -120,41 +119,15 @@
           },
           "996154ae-7357-4480-8f4b-9d805dd23342": {
             "type": "image",
-            "disabled": true,
             "settings": {
-              "position": "5",
-              "aspect_ratio": 0.5,
+              "position": "2",
+              "image": "shopify:\/\/shop_images\/a53f1552277275a26a89b787c584a126.png",
+              "aspect_ratio": 1,
               "wide_image": true,
               "bg_position": "center-center",
-              "title": "",
+              "title": "SHELL OPULENCE COLLECTION",
               "link_text": "",
-              "link": ""
-            }
-          },
-          "04a5206c-8bc0-4b77-a7cc-b49e441aa8fd": {
-            "type": "image",
-            "disabled": true,
-            "settings": {
-              "position": "4",
-              "aspect_ratio": 0.5,
-              "wide_image": true,
-              "bg_position": "center-center",
-              "title": "",
-              "link_text": "",
-              "link": ""
-            }
-          },
-          "67f936cd-de28-4d80-bac5-d817fe2f5e3d": {
-            "type": "image",
-            "disabled": true,
-            "settings": {
-              "position": "7",
-              "aspect_ratio": 0.5,
-              "wide_image": true,
-              "bg_position": "center-center",
-              "title": "",
-              "link_text": "",
-              "link": ""
+              "link": "shopify:\/\/collections\/shell-opulence"
             }
           }
         },
@@ -162,9 +135,7 @@
           "81345a46-de42-45eb-964b-9c42235178bc",
           "dda5cba2-4f40-462c-be0b-cde94094f678",
           "bb2cf87d-08d9-451a-b3ef-e3a3587e0275",
-          "996154ae-7357-4480-8f4b-9d805dd23342",
-          "04a5206c-8bc0-4b77-a7cc-b49e441aa8fd",
-          "67f936cd-de28-4d80-bac5-d817fe2f5e3d"
+          "996154ae-7357-4480-8f4b-9d805dd23342"
         ],
         "settings": {
           "header_style": "logo_above",
