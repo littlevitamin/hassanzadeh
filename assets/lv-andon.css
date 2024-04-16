@@ -258,7 +258,7 @@ fill: white;
 }
 
 .header__dropdown.is-visible .header__dropdown__wrapper .menu__block--wide .background-size-cover.lazyloaded {
-	background-size: contain;
+	/* background-size: contain; */
     background-repeat: no-repeat;
 }
 
