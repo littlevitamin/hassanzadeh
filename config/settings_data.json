@@ -80,11 +80,10 @@
         "blocks": {
           "81345a46-de42-45eb-964b-9c42235178bc": {
             "type": "image",
-            "disabled": true,
             "settings": {
-              "position": "2",
+              "position": "4",
               "image": "shopify:\/\/shop_images\/Mordad-7617.png",
-              "aspect_ratio": 1,
+              "aspect_ratio": 1.5,
               "wide_image": true,
               "bg_position": "center-center",
               "title": "ABOUT",
