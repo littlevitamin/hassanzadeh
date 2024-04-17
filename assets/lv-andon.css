@@ -251,6 +251,10 @@ fill: white;
     margin-top: 30px;
 }
 
+.grandparent .menu__block--wide >* {
+  height: inherit;
+}
+
 
 #dropdown-c240256f6366c270285cc84381fe6181 > div > div > div.menu__block--wide > div > div > div
 {
