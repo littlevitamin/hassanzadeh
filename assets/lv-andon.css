@@ -3385,3 +3385,21 @@ a.navlink.navlink--grandchild.all .navtext {
     min-height: 500px;
   }
 }
+
+.header__dropdown__image .hero__content.backdrop--radial {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__dropdown__image .hero__content.backdrop--radial h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 20.692px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.078px;
+}
