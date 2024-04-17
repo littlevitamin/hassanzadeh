@@ -254,6 +254,7 @@ fill: white;
 .grandparent .menu__block--wide >*,
 .header__dropdown__image > div {
   height: 390px!important;
+  padding-top: 0!important;
 }
 
 
