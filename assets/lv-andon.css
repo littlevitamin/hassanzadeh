@@ -254,7 +254,6 @@ fill: white;
 .grandparent .menu__block--wide >*,
 .header__dropdown__image > div {
   height: 390px!important;
-  padding-top: 0!important;
 }
 
 
@@ -3233,10 +3232,10 @@ a.navlink.navlink--grandchild.all .navtext {
       margin: 0 auto;
   }  
   
-  .image__fill.fade-in-image {
+  /* .image__fill.fade-in-image {
     padding-top: 77% !important;
     background: transparent !important;
-  }
+  } */
   
   .grandparent.kids-3.images-1 .header__grandparent__links, .grandparent.kids-4.images-1 .header__grandparent__links, .grandparent.kids-5.images-1 .header__grandparent__links, .grandparent.kids-6.images-1 .header__grandparent__links, .grandparent.kids-7.images-1 .header__grandparent__links, .grandparent.kids-8.images-1 .header__grandparent__links, .grandparent.kids-9.images-1 .header__grandparent__links, .grandparent.kids-10.images-1 .header__grandparent__links, .grandparent.kids-11.images-1 .header__grandparent__links, .grandparent.kids-12.images-1 .header__grandparent__links, .grandparent.kids-13.images-1 .header__grandparent__links, .grandparent.kids-14.images-1 .header__grandparent__links, .grandparent.kids-15.images-1 .header__grandparent__links, .grandparent.kids-16.images-1 .header__grandparent__links, .grandparent.kids-17.images-1 .header__grandparent__links, .grandparent.kids-18.images-1 .header__grandparent__links, .grandparent.kids-19.images-1 .header__grandparent__links, .grandparent.kids-20.images-1 .header__grandparent__links {
     grid-template-columns: repeat(3,minmax(0,1fr));
