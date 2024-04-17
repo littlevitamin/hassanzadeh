@@ -3228,7 +3228,7 @@ a.navlink.navlink--grandchild.all .navtext {
 @media only screen and (min-width: 900px) {    
   
   .header__dropdown__wrapper {
-      max-width: 960px;
+      max-width: 1380px;
       margin: 0 auto;
   }  
   
