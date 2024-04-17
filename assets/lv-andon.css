@@ -248,6 +248,7 @@ fill: white;
 
 .grandparent .menu__block--wide {
     flex: 2 !important;
+    margin-top: 30px;
 }
 
 
