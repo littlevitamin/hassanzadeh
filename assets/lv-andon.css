@@ -252,7 +252,7 @@ fill: white;
 }
 
 .grandparent .menu__block--wide >* {
-  height: inherit;
+  height: inherit!important;
 }
 
 
