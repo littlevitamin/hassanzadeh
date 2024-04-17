@@ -3394,6 +3394,7 @@ a.navlink.navlink--grandchild.all .navtext {
 
 .header__dropdown__image .hero__content.backdrop--radial {
   height: inherit;
+  width: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
