@@ -252,8 +252,8 @@ fill: white;
 }
 
 .grandparent .menu__block--wide >*,
-.menu__block--wide .image__fill {
-  min-height: 390px!important;
+.header__dropdown__image > div {
+  height: 390px!important;
 }
 
 
