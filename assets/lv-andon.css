@@ -1452,10 +1452,10 @@ padding:0px;
     transition: all 0.25s linear;
 }
 
-  .site-footer-wrapper .grid .footer__block ul li a:hover {
+  /* .site-footer-wrapper .grid .footer__block ul li a:hover {
 	color:#a5844d !important;
 }
-  
+   */
 .site-footer-wrapper .grid .footer__block ul li a:after {
 	content: "";
     position: absolute;
