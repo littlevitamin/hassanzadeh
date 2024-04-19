@@ -30,7 +30,7 @@
     {% endcomment %}
     <div class="grid grid--uniform">
       
-      <div class="footer__block grid__item {{ footer_column_width }}" {{ block.shopify_attributes }}>
+      <div class="footer__block grid__item{% if section.settings.footer_logo == blank %} empty-logo{% endif %} {{ footer_column_width }}" {{ block.shopify_attributes }}>
               {% if linklist_title != blank %}
                 <h2 class="h5 footer__block__title">{{ linklist_title | escape }}</h2>
               {% endif %}
