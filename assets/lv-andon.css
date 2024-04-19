@@ -1498,15 +1498,8 @@ padding:0px;
     font-weight:unset !important;
     text-transform: capitalize;
 }
-  
-.site-footer-wrapper ul.footer__copyright.inline-list.unstyled,
-  .site-footer-wrapper .crafted-changer {
 
-	font-family: "Montserrat-Regular";
-  	
-  	color: #868585 !important;
-}
-  
+
 .site-footer-wrapper .crafted-changer {
 		font-size: 14px;
 	}
