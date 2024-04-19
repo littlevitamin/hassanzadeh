@@ -1443,7 +1443,7 @@ padding:0px;
   
 .site-footer-wrapper .grid .footer__block ul li a,
 .footer__copyright,
-.footer__copyright >* {
+.footer__copyright a {
 	font-family: "Montserrat-Regular";
     color: #043F14;
     font-size: 14px;
