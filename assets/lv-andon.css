@@ -1429,7 +1429,8 @@ padding:0px;
   
 /* Footer */ 
   
-.site-footer-wrapper .grid .footer__block .h5.footer__block__title {
+.site-footer-wrapper .grid .footer__block .h5.footer__block__title,
+.site-footer-wrapper .footer__newsletter__text {
 	font-family: "Montserrat-Bold";
     color: #043F14;
     font-size: 14px;
