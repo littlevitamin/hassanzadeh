@@ -28,7 +28,7 @@
     </a>
     {% endif %}
     {% endcomment %}
-    <div class="grid grid--uniform">
+    <div class="grid grid--uniform footer__top">
       
       <div class="footer__block grid__item{% if section.settings.footer_logo == blank %} empty-logo{% endif %} {{ footer_column_width }}" {{ block.shopify_attributes }}>
               {% if linklist_title != blank %}
@@ -173,7 +173,7 @@
       
     </div>
 
-    <div class="grid">
+    <div class="grid footer__bottom">
       <div class="footer__secondary grid__item {% if section.settings.footer_payment_enable %}medium-up--two-thirds{% endif %}">
 
         <!-- /partials/cross-border.liquid -->
