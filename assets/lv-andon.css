@@ -1710,6 +1710,7 @@ padding:0px;
   .footer__secondary.grid__item.medium-up--two-thirds.crafted-changer {    
     text-align: end;
     margin-right: 29px;
+    display: block;
 }
   
   .footer__secondary.grid__item.medium-up--two-thirds {
