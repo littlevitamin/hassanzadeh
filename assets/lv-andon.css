@@ -1452,6 +1452,12 @@ padding:0px;
     transition: all 0.25s linear;
 }
 
+.footer__top {
+    border-bottom: 0.5px solid #043F14;
+    margin-right: -50px;
+    padding-right: 30px;
+}
+
   /* .site-footer-wrapper .grid .footer__block ul li a:hover {
 	color:#a5844d !important;
 }
