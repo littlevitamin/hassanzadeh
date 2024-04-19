@@ -1569,6 +1569,10 @@ padding:0px;
     border-collapse: initial;
     padding: 0;
 }
+
+#email_input_footer {
+    background: transparent !important;
+}
   
 #shopify-section-footer > footer > div > div.grid.grid--uniform > div:nth-child(6) > h2 {
 	display:none;
