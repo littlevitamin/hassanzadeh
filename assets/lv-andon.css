@@ -3415,3 +3415,14 @@ a.navlink.navlink--grandchild.all .navtext {
   line-height: normal;
   letter-spacing: 1.078px;
 }
+
+.footer__bottom {
+  flex-direction: column;
+}
+
+.footer__bottom .footer__secondary {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row-reverse;
+}
