@@ -1542,14 +1542,9 @@ padding:0px;
 
  
 .site-footer-wrapper .input-group.newsletter-form .input-group-btn .btn {
-	background-color: #a5844d !important;
-  	width: 90px;
+  	width: fit-content;
 }
-  
-.site-footer-wrapper .input-group.newsletter-form .input-group-btn .btn:hover {
-    background-color: #043F14 !important;
-}
-  
+
 .site-footer-wrapper .btn.search-submit {
 	width: 50px;
   background: #a5844d !important;
