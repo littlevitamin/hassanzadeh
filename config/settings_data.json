@@ -195,7 +195,7 @@
           "footer-2": {
             "type": "newsletter",
             "settings": {
-              "richtext": "",
+              "richtext": "<p>Sign-up for Newsletter<\/p>",
               "enable_name": false
             }
           },
