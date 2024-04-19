@@ -1685,6 +1685,10 @@ padding:0px;
   .site-footer-wrapper .site-footer .grid .footer__block.grid__item:nth-child(1) {
   	width: 71%;
   }
+
+  .footer__block.empty-logo {
+    width: 0;
+  }
   
   .site-footer-wrapper .site-footer .grid .footer__block.grid__item:nth-child(2),
   .site-footer-wrapper .site-footer .grid .footer__block.grid__item:nth-child(3),
