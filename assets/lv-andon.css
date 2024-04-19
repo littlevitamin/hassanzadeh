@@ -1703,7 +1703,7 @@ padding:0px;
     }
   
   .site-footer-wrapper .footer__newsletter__text {
-    margin-bottom: 32px;
+    margin-bottom: 0px;
 	}
   
   .site-footer-wrapper .site-footer .grid .footer__block.grid__item:nth-child(1) {
