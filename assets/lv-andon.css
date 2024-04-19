@@ -1455,6 +1455,10 @@ padding:0px;
     transition: all 0.25s linear;
 }
 
+.footer__copyright a {
+  margin: 0 5px;
+}
+
 .footer__top {
     border-bottom: 1px solid #043F14;
     margin-right: -50px;
