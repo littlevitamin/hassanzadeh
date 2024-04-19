@@ -1497,11 +1497,7 @@ padding:0px;
 }
   
 .site-footer-wrapper .input-group-btn button#subscribe {
-	font-family: "Montserrat-Regular";
-  	font-size:13px;
-  	color: white !important;
-    font-weight:unset !important;
-    text-transform: capitalize;
+	background: #EDECEC;
 }
 
 
