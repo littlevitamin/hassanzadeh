@@ -1562,7 +1562,8 @@ padding:0px;
 }
     
 .site-footer-wrapper .input-group {
-    background-color: #fff !important;
+    background: transparent !important;
+    border-bottom: 1px solid #043F14 !important;
     position: relative;
     display: table;
     border-collapse: initial;
