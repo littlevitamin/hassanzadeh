@@ -1725,6 +1725,13 @@ padding:0px;
   .site-footer-wrapper .site-footer .grid .footer__block.grid__item:nth-child(6) {
   	width: 100%;
     padding-right: 30px;
+    position: relative;
+  }
+
+  .footer__social {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
   }
   
   .footer__secondary.grid__item.medium-up--two-thirds.crafted-changer {    
