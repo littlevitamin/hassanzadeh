@@ -1687,7 +1687,7 @@ padding:0px;
   }
 
   .footer__block.empty-logo {
-    width: 0;
+    width: 0!important;
   }
   
   .site-footer-wrapper .site-footer .grid .footer__block.grid__item:nth-child(2),
