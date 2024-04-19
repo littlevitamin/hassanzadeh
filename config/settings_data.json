@@ -38,7 +38,7 @@
     "parallax_strength": 0,
     "product_grid_outline": false,
     "button_radius_style": "square",
-    "show_scroll_top_button": true,
+    "show_scroll_top_button": false,
     "enable_disqus": false,
     "instagram_link": "https:\/\/www.instagram.com\/hassanzadeh_jewelry\/",
     "facebook_link": "https:\/\/www.facebook.com\/hassanzadehjewellery\/?ref=py_c&_rdr",
