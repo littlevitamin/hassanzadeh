@@ -40,6 +40,10 @@
 
 /* -------------------------- */
 
+html {
+  padding: 0!important;
+}
+
 /* Header Section and Slider */
 #shopify-section-header > div.header__wrapper > header > div > div.header__desktop > div.header__desktop__upper > div.header__desktop__bar__r > div > div:nth-child(2) {
   display:none;
