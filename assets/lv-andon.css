@@ -3459,6 +3459,11 @@ a.navlink.navlink--grandchild.all .navtext {
   .footer__bottom .footer__secondary {
     flex-direction: column-reverse;
   }
+  .crafted-changer {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+  }
 }
 
 .collection__nav >*,
