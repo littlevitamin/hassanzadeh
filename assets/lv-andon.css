@@ -3469,6 +3469,12 @@ a.navlink.navlink--grandchild.all .navtext {
     justify-content: flex-start;
     gap: 5px;
   }
+  .footer__block {
+    margin-top: 15px;
+  }
+  .empty-logo {
+    display: none;
+  }
 }
 
 .collection__nav >*,
