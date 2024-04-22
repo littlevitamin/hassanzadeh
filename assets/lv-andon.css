@@ -1460,10 +1460,12 @@ padding:0px;
   margin: 0 5px;
 }
 
-.footer__top {
+@media screen and (min-width: 990px) {
+  .footer__top {
     border-bottom: 1px solid #043F14;
     margin-right: -50px;
     padding-right: 30px;
+  }
 }
 
   /* .site-footer-wrapper .grid .footer__block ul li a:hover {
