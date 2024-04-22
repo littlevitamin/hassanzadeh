@@ -3463,6 +3463,7 @@ a.navlink.navlink--grandchild.all .navtext {
     flex-direction: row;
     justify-content: flex-start;
     gap: 5px;
+    color: #043F14!important;
   }
 }
 
