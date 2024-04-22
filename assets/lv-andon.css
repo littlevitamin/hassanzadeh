@@ -3447,6 +3447,11 @@ a.navlink.navlink--grandchild.all .navtext {
   flex-direction: column;
 }
 
+.site-footer-wrapper a,
+.site-footer-wrapper .crafted-changer {
+  color: #043F14!important;  
+}
+
 .footer__bottom .footer__secondary {
   display: flex;
   justify-content: space-between;
@@ -3463,7 +3468,6 @@ a.navlink.navlink--grandchild.all .navtext {
     flex-direction: row;
     justify-content: flex-start;
     gap: 5px;
-    color: #043F14!important;
   }
 }
 
