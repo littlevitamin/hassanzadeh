@@ -3453,6 +3453,8 @@ a.navlink.navlink--grandchild.all .navtext {
   align-items: baseline;
 }
 
-.collection__nav >* {
+.collection__nav >*,
+.popout__toggle__text, 
+.popout__toggle {
 font-size: 14px!important;
 }
