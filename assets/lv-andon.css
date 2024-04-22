@@ -3455,6 +3455,12 @@ a.navlink.navlink--grandchild.all .navtext {
   align-items: baseline;
 }
 
+@media screen and (max-width: 990px) {
+  .footer__bottom .footer__secondary {
+    flex-direction: column-reverse;
+  }
+}
+
 .collection__nav >*,
 .popout__toggle__text, 
 .popout__toggle {
