@@ -3452,3 +3452,7 @@ a.navlink.navlink--grandchild.all .navtext {
   flex-direction: row-reverse;
   align-items: baseline;
 }
+
+.collection__nav >* {
+font-size: 14px!important;
+}
