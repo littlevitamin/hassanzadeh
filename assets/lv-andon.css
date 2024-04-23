@@ -1509,6 +1509,7 @@ padding:0px;
 
 .site-footer-wrapper .crafted-changer {
 		font-size: 14px;
+  padding: 0!important;
 	}
   
 .site-footer-wrapper input {
