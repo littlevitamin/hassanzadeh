@@ -3450,6 +3450,7 @@ a.navlink.navlink--grandchild.all .navtext {
 .site-footer-wrapper a,
 .site-footer-wrapper .crafted-changer {
   color: #043F14!important;  
+  text-transform: none;
 }
 
 .footer__bottom .footer__secondary {
