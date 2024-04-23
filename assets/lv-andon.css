@@ -1460,7 +1460,7 @@ padding:0px;
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    margin: 0;
+    margin: 0!important;
 }
 
 .footer__copyright a {
