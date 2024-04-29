@@ -476,7 +476,10 @@
       }
 
       var hasSecondFeaturedItem = productGrid.querySelector('.product-item--second--featured-image') !== null;
-      if (hasSecondFeaturedItem) {
+      var hasThirdFeaturedItem = productGrid.querySelector('.product-item--third--featured-image') !== null;
+      if (hasThirdFeaturedItem) {
+        var thirdItemIndex = Math.min(5, productItems.length - 1);
+      } else if (hasSecondFeaturedItem) {
         var thirdItemIndex = Math.min(4, productItems.length - 1);
       } else {
         var thirdItemIndex = Math.min(3, productItems.length - 1);
