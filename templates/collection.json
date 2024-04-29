@@ -23,6 +23,8 @@
           "settings": {
             "featured_collections": "rings",
             "featured_image": "shopify:\/\/shop_images\/8459_44d43a7d-685f-48c1-8997-c25828af2c42.webp",
+            "enable_video": true,
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/fd834b26f43947b7827e9972092c7f05.mp4",
             "featured_image_bg_position": "center-center",
             "featured_heading": "Our mission",
             "featured_text": "",
@@ -38,6 +40,8 @@
           "settings": {
             "featured_collections": "jewellery",
             "featured_image": "shopify:\/\/shop_images\/4040.1.jpg",
+            "enable_video": false,
+            "video_url": "",
             "featured_image_bg_position": "center-center",
             "featured_heading": "new item",
             "featured_text": "<p>this is our newest product<\/p><p><\/p>",
@@ -53,6 +57,8 @@
           "settings": {
             "featured_collections": "rings",
             "featured_image": "shopify:\/\/shop_images\/Img_-_Rings_729f5264-d17a-4f9d-b51f-0bcecb6ef4e1.png",
+            "enable_video": false,
+            "video_url": "",
             "featured_image_bg_position": "center-center",
             "featured_heading": "second item",
             "featured_text": "<p>second item description<\/p><p><\/p>",
@@ -68,6 +74,8 @@
           "settings": {
             "featured_collections": "rings",
             "featured_image": "shopify:\/\/shop_images\/Shell_Opulence_2.png",
+            "enable_video": false,
+            "video_url": "",
             "featured_image_bg_position": "center-center",
             "featured_heading": "third item",
             "featured_text": "<p>third item description<\/p><p><\/p>",
