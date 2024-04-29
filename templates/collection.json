@@ -68,12 +68,30 @@
             "featured_color_overlay": "#222222",
             "featured_overlay_opacity": 10
           }
+        },
+        "third_featured_image_Gmy3wW": {
+          "type": "third_featured_image",
+          "settings": {
+            "featured_collections": "rings",
+            "featured_image": "shopify:\/\/shop_images\/Img_-_Rings.png",
+            "enable_video": false,
+            "video_url": "",
+            "featured_image_bg_position": "center-center",
+            "featured_heading": "",
+            "featured_text": "<p><\/p><p><\/p>",
+            "featured_button_text": "",
+            "featured_button_link": "",
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10
+          }
         }
       },
       "block_order": [
         "6612194a-ae43-4667-8ac4-378f6aed19a3",
         "featured_image_Bp8yBP",
-        "second_featured_image_XVNwdA"
+        "second_featured_image_XVNwdA",
+        "third_featured_image_Gmy3wW"
       ],
       "settings": {
         "enable_sort": true,
