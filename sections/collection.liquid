@@ -406,7 +406,7 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    function reorderFeaturedItem() {
+    function reorderFeaturedItems() {
       var productGrid = document.querySelector('.product-grid');
       if (!productGrid) return;
       
@@ -421,8 +421,8 @@
         }
       }
       
-      if (featuredItemIndex !== -1 && featuredItemIndex !== 4) {
-        var thirdItem = productItems[4];
+      if (featuredItemIndex !== -1 && featuredItemIndex !== 2) {
+        var thirdItem = productItems[2];
         productGrid.insertBefore(productItems[featuredItemIndex], thirdItem);
       }
     }
@@ -441,6 +441,12 @@
           break;
         }
       }
+      
+      if (secondFeaturedIndex !== -1 && secondFeaturedIndex !== 19) {
+        var twentiethItem = productItems[19];
+        productGrid.insertBefore(productItems[secondFeaturedIndex], twentiethItem);
+      }
+    }
     
     function insertThirdFeaturedItem() {
       var productGrid = document.querySelector('.product-grid');
@@ -463,15 +469,11 @@
       }
     }
     
-    reorderFeaturedItem();
+    reorderFeaturedItems();
     insertSecondFeaturedItem();
     insertThirdFeaturedItem();
   });
 </script>
-
-
-
-
 
 {% schema %}
 {
