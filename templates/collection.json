@@ -47,11 +47,27 @@
             "featured_color_overlay": "#222222",
             "featured_overlay_opacity": 10
           }
+        },
+        "second_featured_image_XVNwdA": {
+          "type": "second_featured_image",
+          "settings": {
+            "featured_collections": "bracelet",
+            "featured_image": "shopify:\/\/shop_images\/Img_-_Rings_729f5264-d17a-4f9d-b51f-0bcecb6ef4e1.png",
+            "featured_image_bg_position": "center-center",
+            "featured_heading": "second item",
+            "featured_text": "<p>second item description<\/p><p><\/p>",
+            "featured_button_text": "read more",
+            "featured_button_link": "https:\/\/hassanzadeh.co.uk\/",
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10
+          }
         }
       },
       "block_order": [
         "featured_image_Bp8yBP",
-        "6612194a-ae43-4667-8ac4-378f6aed19a3"
+        "6612194a-ae43-4667-8ac4-378f6aed19a3",
+        "second_featured_image_XVNwdA"
       ],
       "settings": {
         "enable_sort": true,
