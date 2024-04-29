@@ -493,7 +493,7 @@
       if (!productGrid) return;
       
       var productItems = productGrid.querySelectorAll('.product-item');
-      if (!productItems || productItems.length < 21) return;
+      if (!productItems || productItems.length < 20) return;
       
       var secondFeaturedIndex = -1;
       for (var i = 0; i < productItems.length; i++) {
@@ -503,7 +503,7 @@
         }
       }
       
-      var twentiethItemIndex = Math.min(21, productItems.length - 1); // Calculate the index for the 20th position
+      var twentiethItemIndex = Math.min(20, productItems.length - 1); // Calculate the index for the 20th position
       
       if (secondFeaturedIndex !== -1 && secondFeaturedIndex !== twentiethItemIndex) {
         var twentiethItem = productItems[twentiethItemIndex];
