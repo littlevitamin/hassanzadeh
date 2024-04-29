@@ -341,36 +341,35 @@
       var productItems = productGrid.querySelectorAll('.product-item');
       if (!productItems || productItems.length < 20) return;
       
-      var featuredItemIndexes = {
-        first: -1,
-        second: -2
-      };
+      var firstFeaturedIndex = -1;
+      var secondFeaturedIndex = -1;
       
       for (var i = 0; i < productItems.length; i++) {
         if (productItems[i].classList.contains('product-item--featured-image')) {
-          if (featuredItemIndexes.first === -1) {
-            featuredItemIndexes.first = i;
-          } else if (featuredItemIndexes.second === -1) {
-            featuredItemIndexes.second = i;
+          if (firstFeaturedIndex === -1) {
+            firstFeaturedIndex = i;
+          } else if (secondFeaturedIndex === -1) {
+            secondFeaturedIndex = i;
             break; // We found both featured items, no need to continue searching
           }
         }
       }
       
-      if (featuredItemIndexes.first !== -1 && featuredItemIndexes.first !== 3) {
-        var thirdItem = productItems[3];
-        productGrid.insertBefore(productItems[featuredItemIndexes.first], thirdItem);
+      if (firstFeaturedIndex !== -1 && firstFeaturedIndex !== 2) {
+        var thirdItem = productItems[2];
+        productGrid.insertBefore(productItems[firstFeaturedIndex], thirdItem);
       }
       
-      if (featuredItemIndexes.second !== -2 && featuredItemIndexes.second !== 19) {
+      if (secondFeaturedIndex !== -1 && secondFeaturedIndex !== 19) {
         var twentiethItem = productItems[19];
-        productGrid.insertBefore(productItems[featuredItemIndexes.second], twentiethItem);
+        productGrid.insertBefore(productItems[secondFeaturedIndex], twentiethItem);
       }
     }
     
     reorderFeaturedItems();
   });
 </script>
+
 
 
 
