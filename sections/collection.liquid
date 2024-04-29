@@ -411,7 +411,7 @@
       if (!productGrid) return;
       
       var productItems = productGrid.querySelectorAll('.product-item');
-      if (!productItems || productItems.length < 4) return;
+      if (!productItems || productItems.length < 5) return;
       
       var featuredItemIndex = -1;
       for (var i = 0; i < productItems.length; i++) {
@@ -421,8 +421,8 @@
         }
       }
       
-      if (featuredItemIndex !== -1 && featuredItemIndex !== 4) {
-        var thirdItem = productItems[4];
+      if (featuredItemIndex !== -1 && featuredItemIndex !== 5) {
+        var thirdItem = productItems[5];
         productGrid.insertBefore(productItems[featuredItemIndex], thirdItem);
       }
     }
