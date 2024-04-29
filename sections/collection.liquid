@@ -411,7 +411,7 @@
       if (!productGrid) return;
       
       var productItems = productGrid.querySelectorAll('.product-item');
-      if (!productItems || productItems.length < 3) return;
+      if (!productItems || productItems.length < 4) return;
       
       var featuredItemIndex = -1;
       for (var i = 0; i < productItems.length; i++) {
@@ -432,7 +432,7 @@
       if (!productGrid) return;
       
       var productItems = productGrid.querySelectorAll('.product-item');
-      if (!productItems || productItems.length < 20) return;
+      if (!productItems || productItems.length < 21) return;
       
       var secondFeaturedIndex = -1;
       for (var i = 0; i < productItems.length; i++) {
@@ -442,8 +442,8 @@
         }
       }
       
-      if (secondFeaturedIndex !== -1 && secondFeaturedIndex !== 20) {
-        var twentiethItem = productItems[20];
+      if (secondFeaturedIndex !== -1 && secondFeaturedIndex !== 21) {
+        var twentiethItem = productItems[21];
         productGrid.insertBefore(productItems[secondFeaturedIndex], twentiethItem);
       }
     }
