@@ -421,8 +421,14 @@
         }
       }
       
-      if (featuredItemIndex !== -1 && featuredItemIndex !== 3) {
-        var thirdItem = productItems[5];
+      if (featuredItemIndex !== -1 && featuredItemIndex !== 5) {
+        if (productItems[i].classList.contains('product-item--second--featured-image') && productItems[i].classList.contains('product-item--third--featured-image')) {
+          var thirdItem = productItems[5];
+        } else if (productItems[i].classList.contains('product-item--second--featured-image')) {
+          var thirdItem = productItems[4];
+        } else {
+          var thirdItem = productItems[3];
+        }
         productGrid.insertBefore(productItems[featuredItemIndex], thirdItem);
       }
     }
