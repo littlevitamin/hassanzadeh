@@ -18,23 +18,6 @@
     "main": {
       "type": "collection",
       "blocks": {
-        "featured_image_Bp8yBP": {
-          "type": "featured_image",
-          "settings": {
-            "featured_collections": "rings",
-            "featured_image": "shopify:\/\/shop_images\/8459_44d43a7d-685f-48c1-8997-c25828af2c42.webp",
-            "enable_video": true,
-            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c3999522151045d28f1dce3cab8fbc7b.mp4",
-            "featured_image_bg_position": "center-center",
-            "featured_heading": "Our mission",
-            "featured_text": "",
-            "featured_button_text": "Learn more",
-            "featured_button_link": "shopify:\/\/pages\/our-mission",
-            "featured_color_text": "#ffffff",
-            "featured_color_overlay": "#222222",
-            "featured_overlay_opacity": 10
-          }
-        },
         "6612194a-ae43-4667-8ac4-378f6aed19a3": {
           "type": "featured_image",
           "settings": {
@@ -47,6 +30,23 @@
             "featured_text": "<p>this is our newest product<\/p><p><\/p>",
             "featured_button_text": "new product",
             "featured_button_link": "shopify:\/\/products\/amethyst-pendant-5",
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10
+          }
+        },
+        "featured_image_Bp8yBP": {
+          "type": "featured_image",
+          "settings": {
+            "featured_collections": "rings",
+            "featured_image": "shopify:\/\/shop_images\/8459_44d43a7d-685f-48c1-8997-c25828af2c42.webp",
+            "enable_video": true,
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c3999522151045d28f1dce3cab8fbc7b.mp4",
+            "featured_image_bg_position": "center-center",
+            "featured_heading": "Our mission",
+            "featured_text": "",
+            "featured_button_text": "Learn more",
+            "featured_button_link": "shopify:\/\/pages\/our-mission",
             "featured_color_text": "#ffffff",
             "featured_color_overlay": "#222222",
             "featured_overlay_opacity": 10
@@ -88,8 +88,8 @@
         }
       },
       "block_order": [
-        "featured_image_Bp8yBP",
         "6612194a-ae43-4667-8ac4-378f6aed19a3",
+        "featured_image_Bp8yBP",
         "second_featured_image_XVNwdA",
         "third_featured_image_wNYXkq"
       ],
