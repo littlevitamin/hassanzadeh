@@ -447,19 +447,19 @@
       if (!productGrid) return;
       
       var productItems = productGrid.querySelectorAll('.product-item');
-      if (!productItems || productItems.length < 20) return;
+      if (!productItems || productItems.length < 42) return;
       
-      var secondFeaturedIndex = -1;
+      var thirdFeaturedIndex = -1;
       for (var i = 0; i < productItems.length; i++) {
         if (productItems[i].classList.contains('product-item--third--featured-image')) {
-          secondFeaturedIndex = i;
+          thirdFeaturedIndex = i;
           break;
         }
       }
       
-      if (secondFeaturedIndex !== -1 && secondFeaturedIndex !== 41) {
-        var twentiethItem = productItems[41];
-        productGrid.insertBefore(productItems[secondFeaturedIndex], twentiethItem);
+      if (thirdFeaturedIndex !== -1 && thirdFeaturedIndex !== 41) {
+        var fortyfirstItem = productItems[41];
+        productGrid.insertBefore(productItems[thirdFeaturedIndex], fortyfirstItem);
       }
     }
     
