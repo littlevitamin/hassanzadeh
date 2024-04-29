@@ -441,15 +441,31 @@
           break;
         }
       }
+    
+    function insertThirdFeaturedItem() {
+      var productGrid = document.querySelector('.product-grid');
+      if (!productGrid) return;
       
-      if (secondFeaturedIndex !== -1 && secondFeaturedIndex !== 20) {
-        var twentiethItem = productItems[20];
+      var productItems = productGrid.querySelectorAll('.product-item');
+      if (!productItems || productItems.length < 20) return;
+      
+      var secondFeaturedIndex = -1;
+      for (var i = 0; i < productItems.length; i++) {
+        if (productItems[i].classList.contains('product-item--third--featured-image')) {
+          secondFeaturedIndex = i;
+          break;
+        }
+      }
+      
+      if (secondFeaturedIndex !== -1 && secondFeaturedIndex !== 41) {
+        var twentiethItem = productItems[41];
         productGrid.insertBefore(productItems[secondFeaturedIndex], twentiethItem);
       }
     }
     
     reorderFeaturedItem();
     insertSecondFeaturedItem();
+    insertThirdFeaturedItem();
   });
 </script>
 
