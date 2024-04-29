@@ -161,6 +161,8 @@
                     assign featured_button_link = block.settings.featured_button_link
                     assign featured_color_text = block.settings.featured_color_text
                     assign featured_color_overlay = block.settings.featured_color_overlay
+                    assign featured_enable = block.settings.enable_video
+                    assign featured_video = block.settings.video_url
                     assign featured_overlay_opacity = block.settings.featured_overlay_opacity | times: 0.01
                   -%}
                 
@@ -192,6 +194,21 @@
                         {% endif %}
                       </div>
                     {%- endcapture -%}
+                    
+                      {% if enable_video %}
+                        <div class="banner__media">
+                          <video id="vid"
+                            style="height: inherit; width: inherit; object-fit: cover;" 
+                            playsinline="true"
+                            autoplay 
+                            muted
+                            loop 
+                            loading="lazy">
+                            <source src="{{ video_url }}"/>
+                          </video>
+                          <div class="dark-overlay"></div>
+                        </div>
+                      {% endif %}
   
                     {%- unless featured_image == blank -%}
                       <div class="product-item__image">
