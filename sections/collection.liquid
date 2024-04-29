@@ -334,29 +334,40 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    function reorderFeaturedItems() {
+    function reorderFeaturedItem() {
+      var productGrid = document.querySelector('.product-grid');
+      if (!productGrid) return;
+      
+      var productItems = productGrid.querySelectorAll('.product-item');
+      if (!productItems || productItems.length < 3) return;
+      
+      var featuredItemIndex = -1;
+      for (var i = 0; i < productItems.length; i++) {
+        if (productItems[i].classList.contains('product-item--featured-image')) {
+          featuredItemIndex = i;
+          break;
+        }
+      }
+      
+      if (featuredItemIndex !== -1 && featuredItemIndex !== 3) {
+        var thirdItem = productItems[3];
+        productGrid.insertBefore(productItems[featuredItemIndex], thirdItem);
+      }
+    }
+    
+    function insertSecondFeaturedItem() {
       var productGrid = document.querySelector('.product-grid');
       if (!productGrid) return;
       
       var productItems = productGrid.querySelectorAll('.product-item');
       if (!productItems || productItems.length < 20) return;
       
-      var firstFeaturedIndex = -1;
       var secondFeaturedIndex = -1;
-      
       for (var i = 0; i < productItems.length; i++) {
-        if (productItems[i].classList.contains('product-item--featured-image')) {
-          if (productItems[i].classList.contains('product-item--second--featured-image')) {
-            secondFeaturedIndex = i;
-          } else if (firstFeaturedIndex === -1) {
-            firstFeaturedIndex = i;
-          }
+        if (productItems[i].classList.contains('product-item--second--featured-image')) {
+          secondFeaturedIndex = i;
+          break;
         }
-      }
-      
-      if (firstFeaturedIndex !== -1 && firstFeaturedIndex !== 3) {
-        var thirdItem = productItems[3];
-        productGrid.insertBefore(productItems[firstFeaturedIndex], thirdItem);
       }
       
       if (secondFeaturedIndex !== -1 && secondFeaturedIndex !== 20) {
@@ -365,9 +376,11 @@
       }
     }
     
-    reorderFeaturedItems();
+    reorderFeaturedItem();
+    insertSecondFeaturedItem();
   });
 </script>
+
 
 
 
