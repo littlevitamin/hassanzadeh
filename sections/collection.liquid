@@ -208,7 +208,7 @@
                       {% if featured_enable %}
                         <div class="banner__media">
                           <video id="vid"
-                            style="height: inherit; width: inherit; object-fit: cover;" 
+                            style="height: 100%; width: -webkit-fill-available; object-fit: cover; position: absolute;" 
                             playsinline="true"
                             autoplay 
                             muted
@@ -223,7 +223,7 @@
                       </div>
   
                       <noscript>
-                        <div class="product-item__image no-js-image" style="background-image: url('{{ featured_image | img_url: '540x' }}'); background-position: {{ featured_image_bg_position | replace: '-', ' ' }}; background-size: cover; background-repeat: no-repeat;"
+                        <div class="product-item__image no-js-image" style="background-image: {% if featured_enable %} none;{% else %}url('{{ featured_image | img_url: '540x' }}{% endif %}'); background-position: {{ featured_image_bg_position | replace: '-', ' ' }}; background-size: cover; background-repeat: no-repeat;"
                           >
                           {{ featured_image_content }}
                         </div>
