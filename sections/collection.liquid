@@ -524,7 +524,7 @@
       if (!productGrid) return;
       
       var productItems = productGrid.querySelectorAll('.product-item');
-      if (!productItems || productItems.length < 45) return;
+      if (!productItems || productItems.length < 47) return;
       
       var thirdFeaturedIndex = -1;
       for (var i = 0; i < productItems.length; i++) {
@@ -534,7 +534,7 @@
         }
       }
       
-      var fortyfirstItemIndex = Math.min(44, productItems.length - 1); 
+      var fortyfirstItemIndex = Math.min(46, productItems.length - 1); 
       
       if (thirdFeaturedIndex !== -1 && thirdFeaturedIndex !== fortyfirstItemIndex) {
         var fortyfirstItem = productItems[fortyfirstItemIndex];
