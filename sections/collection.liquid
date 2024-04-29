@@ -505,8 +505,13 @@
           break;
         }
       }
-      
-      var twentiethItemIndex = Math.min(20, productItems.length - 1);
+
+      var hasThirdFeaturedItem = productGrid.querySelector('.product-item--third--featured-image') !== null;
+      if (hasThirdFeaturedItem) {
+        var twentiethItemIndex = Math.min(21, productItems.length - 1);
+      } else {
+        var twentiethItemIndex = Math.min(20, productItems.length - 1);
+      }
       
       if (secondFeaturedIndex !== -1 && secondFeaturedIndex !== twentiethItemIndex) {
         var twentiethItem = productItems[twentiethItemIndex];
