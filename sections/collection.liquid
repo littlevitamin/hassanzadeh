@@ -475,7 +475,8 @@
         }
       }
 
-      if (productItems[i].classList.contains('product-item--second--featured-image')) {
+      var hasSecondFeaturedItem = productGrid.querySelector('.product-item--second--featured-image') !== null;
+      if (hasSecondFeaturedItem) {
         console.log('HELLO')
       }
       
