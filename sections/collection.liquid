@@ -422,7 +422,9 @@
       }
       
       if (featuredItemIndex !== -1 && featuredItemIndex !== 6) {
-        if (productItems[i].classList.contains('product-item--second--featured-image')) {
+        if (productItems[i].classList.contains('product-item--second--featured-image') && productItems[i].classList.contains('product-item--third--featured-image')) {
+          var thirdItem = productItems[5];
+        } else if (productItems[i].classList.contains('product-item--second--featured-image')) {
           var thirdItem = productItems[4];
         } else {
           var thirdItem = productItems[3];
