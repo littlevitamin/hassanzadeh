@@ -477,10 +477,10 @@
 
       var hasSecondFeaturedItem = productGrid.querySelector('.product-item--second--featured-image') !== null;
       if (hasSecondFeaturedItem) {
-        console.log('HELLO')
+        var thirdItemIndex = Math.min(4, productItems.length - 1);
+      } else {
+        var thirdItemIndex = Math.min(3, productItems.length - 1);
       }
-      
-      var thirdItemIndex = Math.min(5, productItems.length - 1); // Calculate the index for the third position
       
       if (featuredItemIndex !== -1 && featuredItemIndex !== thirdItemIndex) {
         var thirdItem = productItems[thirdItemIndex];
