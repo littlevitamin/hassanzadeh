@@ -548,26 +548,6 @@
   });
 </script>
 
-<style>
-  .product-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px; /* Adjust the gap as needed */
-}
-
-.product-item--featured-image,
-  .product-item--second--featured-image,
-  .product-item--third--featured-image {
-  grid-column: span 2;
-}
-
-.product-item:nth-child(9n + 4),
-.product-item:nth-child(9n + 5) {
-  grid-column: 3 / span 2;
-}
-
-</style>
-
 {% schema %}
 {
   "name": "Collection products",
