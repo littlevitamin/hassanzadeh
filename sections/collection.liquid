@@ -260,6 +260,31 @@
   </section>
 {%- endpaginate -%}
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  function reorderFeaturedItem() {
+    var productGrid = document.querySelector('.product-grid');
+    if (!productGrid) return;
+    var productItems = productGrid.querySelectorAll('.product-item');
+    if (!productItems || productItems.length < 3) return;
+    var featuredItemIndex = -1;
+    for (var i = 0; i < productItems.length; i++) {
+      if (productItems[i].classList.contains('product-item--featured-image')) {
+        featuredItemIndex = i;
+        break;
+      }
+    }
+    if (featuredItemIndex !== -1 && featuredItemIndex !== 2) {
+      var thirdItem = productItems[2];
+      productGrid.insertBefore(productItems[featuredItemIndex], thirdItem);
+    }
+  }
+  reorderFeaturedItem();
+});
+
+</script>
+
+
 {% schema %}
 {
   "name": "Collection products",
