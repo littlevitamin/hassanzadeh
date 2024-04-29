@@ -21,7 +21,7 @@
         "featured_image_Bp8yBP": {
           "type": "featured_image",
           "settings": {
-            "featured_collections": "bracelet",
+            "featured_collections": "rings",
             "featured_image": "shopify:\/\/shop_images\/8459_44d43a7d-685f-48c1-8997-c25828af2c42.webp",
             "featured_image_bg_position": "center-center",
             "featured_heading": "Our mission",
@@ -51,7 +51,7 @@
         "second_featured_image_XVNwdA": {
           "type": "second_featured_image",
           "settings": {
-            "featured_collections": "bracelet",
+            "featured_collections": "rings",
             "featured_image": "shopify:\/\/shop_images\/Img_-_Rings_729f5264-d17a-4f9d-b51f-0bcecb6ef4e1.png",
             "featured_image_bg_position": "center-center",
             "featured_heading": "second item",
