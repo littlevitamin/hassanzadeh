@@ -548,6 +548,23 @@
   });
 </script>
 
+<style>
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .product-item {
+    max-width: 100%;
+    width: 100%;
+  }
+  .product-item--featured-image,
+  .product-item--second--featured-image,
+  .product-item--third--featured-image {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+</style>
+
 {% schema %}
 {
   "name": "Collection products",
