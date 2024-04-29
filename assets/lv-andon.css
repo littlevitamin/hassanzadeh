@@ -3415,7 +3415,8 @@ a.navlink.navlink--grandchild.all .navtext {
   }
 }
 
-.product-item--featured-image {
+.product-item--featured-image,
+.product-item--second--featured-image{
   width: 50%;
   padding-bottom: 10px;
   border: 0;
