@@ -44,6 +44,20 @@
       {% endunless %}
     {% endif %}
   </div>
+  {% if section.settings.enable_video %}
+    <div class="banner__media">
+      <video id="vid"
+        style="height: inherit; width: inherit; object-fit: cover;" 
+        playsinline="true"
+        autoplay 
+        muted
+        loop 
+        loading="lazy">
+        <source src="{{ section.settings.video_url }}"/>
+      </video>
+      <div class="dark-overlay"></div>
+    </div>
+  {% else %}
   {% assign overlay_opacity = section.settings.overlay_opacity | times: 0.01 %}
   <div class="image-overlay" style="background-color:{{ section.settings.overlay_color }} !important; opacity:{{ overlay_opacity }};"></div>
 
@@ -60,6 +74,7 @@
   {% render 'image-background', img_object: section.settings.image, frame_height_class: section.settings.height, bg_position: section.settings.bg_position, modifier: desktop_image_modifier %}
 
   {{ mobile_image }}
+  {% endif %}
 </div>
 
 {% schema %}
